@@ -1,0 +1,43 @@
+baseURL: https://pynickle.github.io/
+languageCode: en-us
+title: Enchanting Euphony
+theme: PaperMod
+enableInlineShortcodes: true
+enableEmoji: true
+
+mainsections: ["posts"]
+
+pagination:
+  pagerSize: 5
+
+menu:
+  main:
+    - identifier: tools
+      name: Tools
+      url: /tools/
+      weight: 10
+
+params:
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowPageNums: true
+  ShowToc: false
+  homeInfoParams:
+    Title: Hi this is ENC_Euphony👋
+    Content: |-
+      Welcome to **ENC_Euphony**'s Personal Website 
+
+      Discover a collection of intriguing and delightful content. 
+
+      Feel free to **explore** and *enjoy* the journey. 💖
+  socialIcons:
+    - name: github
+      title: View Source On Github
+      url: https://github.com/pynickle/pynickle.github.io
+    - name: email
+      title: Send Me An Email
+      url: mailto:2330458484@qq.com
+caches:
+  images:
+    dir: :cacheDir/images
