@@ -67,5 +67,22 @@ Of course, you can flexibly apply the above rules. You may leave the scope field
 
 After all, the **fundamental purpose** of using this convention is to _maintain the readability of commit messages_.
 
+## [Keep a ChangeLog](https://keepachangelog.com/)
+
+Keep a ChangeLog is a specification for writing changelog. A well-written changelog should enable users and contributors to clearly see what noteworthy updates exist between two versions.
+
+The most important part of this specification is grouping similar changes together. Below are some grouping categories:
+
+* **Added**: Newly added features.
+* **Changed**: Modifications to existing features.
+* **Deprecated**: Features no longer recommended for use and scheduled for removal.
+* **Removed**: Features that have been removed.
+* **Fixed**: Bug fixes.
+* **Security**: Security enhancements.
+
+Also remember one very basic thing: _**changelogs are written for people, not machines**_.
+
+You can visit their website for more detailed information on the _changelog format_.
+
 ## Conclusion
 Following established programming standards like **Semantic Versioning** and **AngularJS's Git Commit Message Convention** improves code quality and team collaboration. Start integrating these practices to build robust, maintainable software.
