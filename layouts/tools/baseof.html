@@ -4,7 +4,10 @@
 <head>
     {{ $bulma := resources.Get "css/bulma.min.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $bulma.Permalink }}">
+    {{ $website := resources.Get "css/website.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $website.Permalink }}">
     {{- partial "head.html" . }}
+
 </head>
 
 <body class="
