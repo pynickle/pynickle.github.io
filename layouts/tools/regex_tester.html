@@ -1,39 +1,20 @@
 {{ define "main" }}
-<main class="tools-page">
-    <h2>Tools Collection</h2>
-    <p>Welcome to the Tools section of ENC_Euphony's website! Discover a curated set of utilities and resources designed to spark curiosity and creativity.</p>
-    <ul>
-        <li><strong>Tool 1</strong>: A utility for simplifying workflows.</li>
-        <li><strong>Tool 2</strong>: A resource for creative coding projects.</li>
-        <li><a href="mailto:your.email@example.com">Suggest a Tool</a></li>
-    </ul>
-</main>
-
-<style>
-    .tools-page {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 1rem;
-        background: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .tools-page h2 {
-        color: #2c3e50;
-        font-size: 1.8rem;
-    }
-    .tools-page p {
-        line-height: 1.6;
-    }
-    .tools-page ul {
-        list-style-type: disc;
-        padding-left: 2rem;
-    }
-    .tools-page a {
-        color: #3498db;
-        text-decoration: none;
-    }
-    .tools-page a:hover {
-        text-decoration: underline;
-    }
-</style>
+    {{ $script := resources.Get "ts/tools/regex_tester.ts" | js.Build | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    <main>
+        <p class="title is-1 is-spaced">Regex Tester</p>
+        <hr class="bd-hr">
+        <div class="field">
+            <label class="label">Regex</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="The regular expression you want to test"></textarea>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Text</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Text used for testing"></textarea>
+            </div>
+        </div>
+    </main>
 {{ end }}
