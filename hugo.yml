@@ -19,7 +19,8 @@ menu:
 
 params:
   defaultTheme: auto
-  ShowShareButtons: true
+  ShowShareButtons: false
+  ShowWordCount: true
   ShowCodeCopyButtons: true
   ShowPageNums: true
   ShowToc: false
