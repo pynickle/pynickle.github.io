@@ -3,9 +3,8 @@ author: "ENC_Euphony"
 title: "Key Programming Standards and Conventions"
 date: "2025-09-16"
 description: "This article explores essential programming standards, such as Semantic Versioning and AngularJS conventions, to help developers write consistent, maintainable code. Learn best practices to enhance collaboration and software quality."
-tags: ["programming", "standard"]
 categories: ["programming"]
-weight: 1
+weight: 2
 ---
 # Key Programming Standards and Conventions
 

@@ -17,6 +17,11 @@ menu:
       url: /tools/
       weight: 10
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   defaultTheme: auto
   ShowShareButtons: false
