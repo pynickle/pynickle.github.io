@@ -22,17 +22,20 @@ Currently developing a QQ Bot called _Yuan_, learning **Rust**
 
 ## Github Stats
 
-<picture>
-  <!-- 深色模式 -->
-  <source
-    srcset="https://ghstats.euphony.ink/api?username=pynickle&show_icons=true&icon_color=A0A0A0&title_color=A0A0A0&text_color=FFFFFF&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
-  <!-- 浅色模式 -->
-  <source
-    srcset="https://ghstats.euphony.ink/api?username=pynickle&show_icons=true&icon_color=4A4A4A&title_color=616161&text_color=1F2328&border_color=000000&theme=transparent"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://enc-euphony.vercel.app/api?username=pynickle&show_icons=true&icon_color=4A4A4A&title_color=616161&text_color=1F2328&border_color=000000&theme=transparent" />
-</picture>
+<img class="github-stats light" src="https://ghstats.euphony.ink/api?username=pynickle&show_icons=true&icon_color=4A4A4A&title_color=616161&text_color=1F2328&border_color=000000&theme=transparent" />
 
+<img class="github-stats dark" src="https://ghstats.euphony.ink/api?username=pynickle&show_icons=true&icon_color=A0A0A0&title_color=A0A0A0&text_color=FFFFFF&theme=dark" />
+
+<style>
+.github-stats.dark {
+display: none;
+}
+
+html[data-theme='dark'] .github-stats.light {
+display: none;
+}
+
+html[data-theme='dark'] .github-stats.dark {
+display: block;
+}
+</style>
